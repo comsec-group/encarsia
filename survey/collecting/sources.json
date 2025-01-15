@@ -1,0 +1,30 @@
+[
+  {
+    "repo_owner": "lowRISC",
+    "repo_name": "ibex",
+    "source_directories": [
+      "rtl/"
+    ]
+  },
+  {
+    "repo_owner": "openhwgroup",
+    "repo_name": "cva6",
+    "source_directories": [
+      "src/"
+    ]
+  },
+  {
+    "repo_owner": "chipsalliance",
+    "repo_name": "rocket-chip",
+    "source_directories": [
+      "src/main/scala"
+    ]
+  },
+  {
+    "repo_owner": "riscv-boom",
+    "repo_name": "riscv-boom",
+    "source_directories": [
+      "src/main/scala"
+    ]
+  }
+]

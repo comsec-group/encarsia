@@ -1,0 +1,211 @@
+{
+  "HACK@DAC19": [
+    {
+      "number": 17,
+      "title": "Bootrom can be corrupted by user mode applications",
+      "url": "https://github.com/HACK-EVENT/hackatdac19/compare/main...fix_cwe_1326_in_bootrom",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 45,
+      "title": "Secure registers are accessible via AXI",
+      "url": "https://github.com/HACK-EVENT/hackatdac19/compare/main...fix_cwe_1220_in_axi_node_intf_wrap_sv",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 48,
+      "title": "Unlocking JTAG sets the processor privilege level to Machine mode",
+      "url": "https://github.com/HACK-EVENT/hackatdac19/compare/main...fix_cwe_1244_in_csr_regfile",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 48,
+      "title": "Unlocking JTAG sets the processor privilege level to Machine mode",
+      "url": "https://github.com/HACK-EVENT/hackatdac19/compare/main...fix_cwe_1244_in_csr_regfile_new",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    }
+  ],
+  "HACK@DAC21": [
+    {
+      "number": 4,
+      "title": "JTAG not temporarily disabled after several continuous wrong password attempts",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1191_in_dmi_jtag_sv",
+      "category": "Not Bug",
+      "security_relevant": true,
+      "comment": "classification: both, but fuzzers won't check for that",
+      "checked": true
+    },
+    {
+      "number": 21,
+      "title": "Same cycle counter used for both CSR mcycle and cycle",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix-cwe-1303",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 22,
+      "title": "Instruction retired counters are updated in non-debug mode",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix-cwe-440",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 23,
+      "title": "IRQ source input badly connected",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix-cwe-1276",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 30,
+      "title": "JTAG key is hardcoded",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...cwe_1329_in_jtag_hmac",
+      "category": "Not Bug",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 35,
+      "title": "Reg locks are disabled by default when reset",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1232",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 36,
+      "title": "SHA input data not cleared after HASH computation",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1239",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 39,
+      "title": "AES plain text is left uncleared after the encryption is over in the peripheral registers",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_226",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 42,
+      "title": "At reset, the access control values are set to full access",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_276",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 46,
+      "title": "Not disconnecting sensitive data from fuse when in debug mode",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1243_in_aes0",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 47,
+      "title": "not clearing one of the aes keys when entering debug mode",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix-cwe-1258-124",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true,
+      "comment": "could also be 98"
+    },
+    {
+      "number": 48,
+      "title": "JTAG unlock disables the reglocks",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1234_in_reglk",
+      "category": "Not Bug",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 51,
+      "title": "Chicken bits corrupting mie csr reg value",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_440_HD21bug%2351",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 54,
+      "title": "DMA can do load even if store pmp check fails and vice versa",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1245",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 70,
+      "title": "Polynomials stored in fuse memory are NOT primitive polynomials for their respective fields. If software does not reconfigure them then the PRNG sequence is much shorter",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1240#",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 72,
+      "title": "Reset registerlock, unlocking all registers: The reset_controller can send extra reset signals to peripherals. This give a chance to reset the registerlock, and make the private data of all other peripherals to be readable.",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...cwe_1199_in_reglk",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 83,
+      "title": "Incorrect indices used to get the jtag_hash_o, ikey_hash_o, and okey_hash_o values from FUSE mem",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...cwe_1221_in_fuse_mem",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "fuzzers won't find, it is driver",
+      "checked": true
+    },
+    {
+      "number": 90,
+      "title": "Power side channel in the RSA core can leak private exponent to a physical attacker. Leaking private exponent leads to full private key recovery.",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix-cwe-1300",
+      "category": "Not Bug",
+      "security_relevant": true,
+      "checked": true,
+      "comment": "could be 89"
+    },
+    {
+      "number": 92,
+      "title": "Integer overflow in bootrom",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...cwe_1254_bootrom",
+      "category": "Not Bug",
+      "security_relevant": true,
+      "comment": "software bug, unsure about the number could also be 93 or 94",
+      "checked": true
+    },
+    {
+      "number": 96,
+      "title": "Rom module is hardcoded",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...cwe_1310_riscv_peripheral",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    },
+    {
+      "number": 99,
+      "title": "CLINT registers are not protected by access control",
+      "url": "https://github.com/HACK-EVENT/hackatdac21/compare/main...fix_cwe_1317_in_clint",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "checked": true
+    }
+  ]
+}

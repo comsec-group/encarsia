@@ -1,0 +1,5 @@
+{
+  "rocket": "/cascade-chipyard/cascade-rocket",
+  "boom": "/cascade-chipyard/cascade-boom",
+  "ibex": "/encarsia-ibex/cellift"
+}

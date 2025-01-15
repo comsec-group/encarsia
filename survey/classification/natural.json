@@ -1,0 +1,2342 @@
+{
+  "cva6": [
+    {
+      "number": 27,
+      "title": ":bug: Fixes #26",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/27",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Multiplier and divider accept requests while being flushed"
+    },
+    {
+      "number": 27,
+      "title": ":bug: Fixes #26",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/27",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Divider is not flushed"
+    },
+    {
+      "number": 35,
+      "title": "Fix #34",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/35",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Cache serves requests while being flushed"
+    },
+    {
+      "number": 35,
+      "title": "Fix #34",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/35",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Flush does not reset valid bits in cache"
+    },
+    {
+      "number": 38,
+      "title": "Fix #37",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/38",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Speculative load was committed"
+    },
+    {
+      "number": 51,
+      "title": "Fix FP forwarding and missing FP loads/stores",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/51",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Wrong forwarding logic"
+    },
+    {
+      "number": 58,
+      "title": "WIP: Fix #54",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/58",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "A store was dropped on a following load's cache eviction."
+    },
+    {
+      "number": 67,
+      "title": "Fix issue with next PC calculation",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/4f73473b1b873b4b2185da4f54712f18e91b3622",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrong next PC calculation (mostly pre-fetch related things fixed)"
+    },
+    {
+      "number": 67,
+      "title": ":bug: Fix problems with branch handling",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/40d01a6144d21efa13f75070b5274cd67c1d4cc4",
+      "category": "Not Bug",
+      "comment": "problems with branch handling - prediction related"
+    },
+    {
+      "number": 67,
+      "title": ":bug: Fix problem with incosistent cache-line",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/5a41cfa6547ca646f4065b1aa277725c0d1226e3",
+      "category": "Not Bug",
+      "comment": "todo fixed"
+    },
+    {
+      "number": 67,
+      "title": "Remove unintentional reduction operator",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/cfd392415bb2075cf0ba02ccaaf9514d90fdef96",
+      "category": "Not Bug",
+      "comment": "no effect"
+    },
+    {
+      "number": 67,
+      "title": ":bug: Fix problem with I$ when axi.last is high",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/ae174ca6c3de0392515a249651d634389e85b4fb",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Correct FSM upates in case axi input is has no valid bit setnot sure what the actual consequences were"
+    },
+    {
+      "number": 67,
+      "title": "Ariane next",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67",
+      "category": "Not Bug",
+      "comment": "verification code"
+    },
+    {
+      "number": 67,
+      "title": ":bug: Fix problem with incorrect wiring",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/d03ed66e9dbe4c3db80d5e930bbbbcc48c63ef1c",
+      "category": "Not Bug",
+      "comment": "syntax"
+    },
+    {
+      "number": 67,
+      "title": ":bug: Fix race condition between store and cache line eviction",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/79a2189e15488b2532f7d9b3f7a8ffcaf4c0e275",
+      "category": "Not Bug",
+      "comment": "Fix race condition between store and cache line eviction (was todo)"
+    },
+    {
+      "number": 67,
+      "title": "Fix #65, writes are ignored in sstatus",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67/commits/cd1db48d14923924edde18e3b9f2efa2040e021f",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "MSTATUS.MIE is written unexpectedly when programming SSTATUS"
+    },
+    {
+      "number": 67,
+      "title": "Ariane next",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/67",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "MSTATUS.MIE is written unexpectedly when programming SSTATUS"
+    },
+    {
+      "number": 73,
+      "title": "Small Bugfixes",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/73",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 74,
+      "title": "Fix #72",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/74",
+      "category": "Not Bug",
+      "comment": "verification"
+    },
+    {
+      "number": 75,
+      "title": "cache hierarchy changes and LSU load path optimizations",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/75",
+      "category": "Not Bug",
+      "comment": "verification"
+    },
+    {
+      "number": 80,
+      "title": "Fix #78",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/80",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "D/Q of FF were mixed upinformation leak"
+    },
+    {
+      "number": 83,
+      "title": ":bug: Fix typos in clint",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/83",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 86,
+      "title": "Ariane next",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/86",
+      "category": "Not Bug",
+      "comment": "removes combinational loop"
+    },
+    {
+      "number": 91,
+      "title": "Ariane next",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/91",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "fix bug in dm_csrs (reading empty fifo)"
+    },
+    {
+      "number": 97,
+      "title": "Initial FPGA SoC",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/97",
+      "category": "Not Bug"
+    },
+    {
+      "number": 104,
+      "title": ":racehorse: Fix #57",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/104",
+      "category": "Not Bug",
+      "comment": "performance bug related to branch prediction"
+    },
+    {
+      "number": 105,
+      "title": ":bug: Fix #99",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/105",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "Single stepping debug was wrongly implementedPossibly security-relevant bugs are hidden ?"
+    },
+    {
+      "number": 125,
+      "title": "Misc majurity fixes",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/125",
+      "category": "Not Bug",
+      "comment": "clean ups, feature additions"
+    },
+    {
+      "number": 128,
+      "title": "Fix Issue #127",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/128",
+      "category": "Not Bug",
+      "comment": "syntax"
+    },
+    {
+      "number": 138,
+      "title": "Fix mismatches in virtual address checking logic (this fixes #136).",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/138",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Wrong address bit checksA fault may not be triggered"
+    },
+    {
+      "number": 138,
+      "title": "Fix mismatches in virtual address checking logic (this fixes #136).",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/138",
+      "category": "Broken Conditional",
+      "security_relevant": false,
+      "comment": "Address bit checks in wrong modechecks were done too often"
+    },
+    {
+      "number": 138,
+      "title": "Fix mismatches in virtual address checking logic (this fixes #136).",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/138",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrong fault reported in case of address checks"
+    },
+    {
+      "number": 152,
+      "title": "DM: Fix misaligned progbufsize and reg checks",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/152",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong conversions from DMI data when re-casted."
+    },
+    {
+      "number": 152,
+      "title": "DM: Fix misaligned progbufsize and reg checks",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/152",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "register address checks were potentially too loose on CSR access"
+    },
+    {
+      "number": 156,
+      "title": ":bug: Fix HINT instructions in compressed decoder",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/156",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Check for illegal instruction and compressed hint bits was wrongWrong triggering of exceptions"
+    },
+    {
+      "number": 160,
+      "title": "Fix for address offset issue (fix #158)",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/160",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "Corrected performance counter addresses"
+    },
+    {
+      "number": 160,
+      "title": "Fix for address offset issue (fix #158)",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/160",
+      "category": "Broken Conditional",
+      "security_relevant": false,
+      "comment": "Update conditions when performance counter CSRs are written"
+    },
+    {
+      "number": 171,
+      "title": "WIP: Fix a cache issue (OpenPiton cache subsystem), update JTAG timing constraints, fix type error in Ariane FPGA toplevel.",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/171",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 180,
+      "title": " Fix register access issue in debug mode, only affects A0 (fix #179).",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/180",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Constant register value returned in debug modeAlways returned 0 for reg a0. May hide that there is a secret value propagated."
+    },
+    {
+      "number": 188,
+      "title": "Fix write-back / cache read collision issue in serpent dcache.",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/188/commits/1933066e45631c98cd42f59d03f9b2777b7de4ac",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Cache returns write-back data instead of cached data"
+    },
+    {
+      "number": 188,
+      "title": "This flushs the branch predictors when entering exception handlers in order to avoid speculative fetches from virtual addresses (to be improved with PMAs).",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/188/commits/83112cb33c79fbd57d26bbe42200e6eba5ca011e",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "avoid speculative fetches from virtual addresses"
+    },
+    {
+      "number": 188,
+      "title": "Maturity fixes and AXI extensions for write-through cache system.",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/188",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "avoid speculative fetches from virtual addresses"
+    },
+    {
+      "number": 188,
+      "title": "Fix byte offset of IPIs in CLINT",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/188/commits/1c6f55b3d1c6fb19bdea5f38ec969f3d367c1170",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "MSIP machine-level SW interrupt-pending CSR was not updated correctlyAn interrupt could be skipped"
+    },
+    {
+      "number": 188,
+      "title": "Fix blocking assignments in ff process.",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/188/commits/9a32267a1f7b992d31ed544617a655e0bbd142f1",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Interrupt IDs were wrongly updatedCould hide actual interrupt cause"
+    },
+    {
+      "number": 188,
+      "title": "Maturity fixes and AXI extensions for write-through cache system.",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/188",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "assumed replicated data in serpent dcache when reading from an non cachable regionwrong cache offset was used"
+    },
+    {
+      "number": 188,
+      "title": "Constant bits in haltsum reduction must be 1 (AND reduction).",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/188/commits/f3acfaccad064992268db721b9028d19ada7ea8a",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrong halt summary in debug CSRcould hide whether hart is halted"
+    },
+    {
+      "number": 189,
+      "title": "Fix AMO problem in Verilator",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/189",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fix floating point casting sizewrong floating point calculations"
+    },
+    {
+      "number": 189,
+      "title": "Fix AMO problem in Verilator",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/189",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Fix FPU wrapper FSMwrong floating point calculations"
+    },
+    {
+      "number": 191,
+      "title": "Fix race condition in dcache misshandler",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/191",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fix race condition in dcache misshandlerPotential cache inconsistencies"
+    },
+    {
+      "number": 191,
+      "title": "Fix race condition in dcache misshandler",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/191",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Fix race condition in dcache misshandlerPotential cache inconsistencies"
+    },
+    {
+      "number": 192,
+      "title": "Improve Tandem Simulation, switch-able caches and fix a cache-bug",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/192",
+      "category": "Not Bug",
+      "comment": "general improvements"
+    },
+    {
+      "number": 201,
+      "title": "Ariane 4.1.1 release",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/201",
+      "category": "Not Bug",
+      "comment": "general improvements"
+    },
+    {
+      "number": 203,
+      "title": "Fix license headers of FPU files (fix #202)",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/203",
+      "category": "Not Bug",
+      "comment": "general improvements"
+    },
+    {
+      "number": 206,
+      "title": "Fix wt_axi_adapter bug that only appeared when using dcache lines that are wider than icache lines.",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/206",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Mixed up array index between I and D cacheSome data was cut off, could hide actual values"
+    },
+    {
+      "number": 208,
+      "title": "Fix #207",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/208",
+      "category": "Not Bug",
+      "comment": "timing improvement"
+    },
+    {
+      "number": 209,
+      "title": "Fix #70",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/209",
+      "category": "Not Bug",
+      "comment": "linting"
+    },
+    {
+      "number": 217,
+      "title": "Bump common cells to v1.12, misc fixes, provision exponential backoff window for SC",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/217",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 219,
+      "title": "Misc fixes (Verilator compliance, PK simulation issues, PLIC regmap, updated DM)",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/219",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 221,
+      "title": "Execute PMA",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/221",
+      "category": "Not Bug",
+      "comment": "performance improvement"
+    },
+    {
+      "number": 222,
+      "title": "Fix Performance Counter encoding",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/222",
+      "category": "Not Bug",
+      "comment": "A bug that clearly introduced another bug, and was fixed later. Could count it as mux."
+    },
+    {
+      "number": 223,
+      "title": "VCS and PMA fixes",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/223",
+      "category": "Not Bug",
+      "comment": "general improvements"
+    },
+    {
+      "number": 225,
+      "title": "Fix #134",
+      "url": "https://api.github.com/repos/openhwgroup/cva6/pulls/225",
+      "category": "Not Bug",
+      "comment": "verification code"
+    }
+  ],
+  "ibex": [
+    {
+      "number": 2166,
+      "title": "[rtl] Guard against false memory responses for secure configurations",
+      "url": "https://github.com/lowRISC/ibex/pull/2166",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "we found itunexpected memory error input caused data leakage"
+    },
+    {
+      "number": 1780,
+      "title": "[rtl] Cannot add M mode executable PMP regions when MML = 1",
+      "url": "https://github.com/lowRISC/ibex/pull/1780",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "security configuration did not allow all options"
+    },
+    {
+      "number": 225,
+      "title": "Fix linting warning",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/225",
+      "category": "Broken Conditional"
+    },
+    {
+      "number": 343,
+      "title": "[Priv modes] Add support for U-Mode",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/343",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fix address matching bugsbug in PMP region check"
+    },
+    {
+      "number": 335,
+      "title": "[RTL] Flop exc_req in controller to ease timing",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/335",
+      "category": "Not Bug",
+      "comment": "305 - WCET related, no architectural bug"
+    },
+    {
+      "number": 332,
+      "title": "[Prefetch buffer] - various bug fixes",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/332",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Interrupt handler returned to misaligned address"
+    },
+    {
+      "number": 332,
+      "title": "[Prefetch buffer] - various bug fixes",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/332",
+      "category": "Not Bug",
+      "comment": "296 - interface update order"
+    },
+    {
+      "number": 332,
+      "title": "[Prefetch buffer] - various bug fixes",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/332",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fetched instruction was executed despite incoming instruction fetch error"
+    },
+    {
+      "number": 326,
+      "title": "Lint: Fix parameter width",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/326",
+      "category": "Not Bug",
+      "comment": "Unspecified parameter width with likely no effect"
+    },
+    {
+      "number": 319,
+      "title": "Lint: Remove some lint warnings",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/319",
+      "category": "Not Bug",
+      "comment": "Verification code related"
+    },
+    {
+      "number": 302,
+      "title": "Controller: fix `nmi_mode` default assignment",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/302",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Controller: fix `nmi_mode` default assignment"
+    },
+    {
+      "number": 294,
+      "title": "Controller: Fix exception cause ID of fast interrupts",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/294",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Adds bits to exception cause"
+    },
+    {
+      "number": 293,
+      "title": "[I-side] - Fix issues found in tracing example",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/293",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "A request of the core dropped before the test benche's granta dropped request"
+    },
+    {
+      "number": 292,
+      "title": "[I-side] - Fix assertion error",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/292",
+      "category": "Not Bug",
+      "comment": "verification code related"
+    },
+    {
+      "number": 289,
+      "title": "Fix syntax error",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/289",
+      "category": "Not Bug",
+      "comment": "Fix syntax error"
+    },
+    {
+      "number": 286,
+      "title": "CSRs: reset `dcsr.XDEBUGVER` to `XDEBUGVER_STD` instead of 0",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/286",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Debug CSR relatedif the bit were used to change Ibex debug behavior"
+    },
+    {
+      "number": 284,
+      "title": "Add core_sleep_o to ibex interface (fixes #258)",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/284",
+      "category": "Not Bug",
+      "comment": "clock related information only"
+    },
+    {
+      "number": 282,
+      "title": "[RTL] Fix I-side timing loop",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/282",
+      "category": "Not Bug",
+      "comment": "combinational loop - performance"
+    },
+    {
+      "number": 279,
+      "title": "Replace cluster_id/core_id with hart_id (Fixes #29)",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/279",
+      "category": "Not Bug",
+      "comment": "Allows more hart IDs"
+    },
+    {
+      "number": 277,
+      "title": "CSR: Access checks on Debug CSRs",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/277",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Allows single stepping/observation of PC"
+    },
+    {
+      "number": 276,
+      "title": "[RTL] - Remove timing loop in LSU",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/276",
+      "category": "Not Bug",
+      "comment": "pmp error 'fix' was needed due to new timing"
+    },
+    {
+      "number": 272,
+      "title": "Fix behavior of DRET executed outside debug mode",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/272",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Exception request logic was updated"
+    },
+    {
+      "number": 272,
+      "title": "Fix behavior of DRET executed outside debug mode",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/272",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "FSM update to trigger illegal instr. exception Control flow direction to dpc"
+    },
+    {
+      "number": 271,
+      "title": "Update ibex_register_file_latch.sv",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/271",
+      "category": "Not Bug",
+      "comment": "rejected"
+    },
+    {
+      "number": 227,
+      "title": "CSRs: add `irq_` prefix to `Interrupts_t` members",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/227",
+      "category": "Not Bug",
+      "comment": "signal naming"
+    },
+    {
+      "number": 225,
+      "title": "Fix linting warning",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/225",
+      "category": "Not Bug",
+      "comment": "refactoring"
+    },
+    {
+      "number": 222,
+      "title": "Fix IF stalls preventing deassertion of regfile write enable",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/222",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Adds an assignment in a default casereg file gets updated while core stalls in decode"
+    },
+    {
+      "number": 222,
+      "title": "Fix IF stalls preventing deassertion of regfile write enable",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/222",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "updates instr_executing calculation"
+    },
+    {
+      "number": 169,
+      "title": "ID/EX stage: do not write to register file upon load errors",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/169",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "erronous data is loaded to register"
+    },
+    {
+      "number": 166,
+      "title": "Decoder: fix signaling and detection of illegal instructions",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/166",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Illegal instruction flag asserted too shortillegal instructions are executed"
+    },
+    {
+      "number": 166,
+      "title": "Decoder: fix signaling and detection of illegal instructions",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/166",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "A case was missed where the illegal instr. flag should be set too"
+    },
+    {
+      "number": 157,
+      "title": "Fix dpc CSR not updated",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/157",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "debug input was not checked in some FSMsCore entered debug mode, although request had stopped"
+    },
+    {
+      "number": 155,
+      "title": "Tracer based on RVFI",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/155",
+      "category": "Not Bug",
+      "comment": "Verification code"
+    },
+    {
+      "number": 132,
+      "title": "Cleanup main processor controller",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/132",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "New irq signals added"
+    },
+    {
+      "number": 132,
+      "title": "Cleanup main processor controller",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/132",
+      "category": "Broken Conditional",
+      "security_relevant": true
+    },
+    {
+      "number": 132,
+      "title": "Cleanup main processor controller",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/132",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Fixed exception + debug mode entering combination"
+    },
+    {
+      "number": 132,
+      "title": "Cleanup main processor controller",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/132",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Exception priorities"
+    },
+    {
+      "number": 132,
+      "title": "Cleanup main processor controller",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/132",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Do not write to reg in case of idle or illegal CSR decoded"
+    },
+    {
+      "number": 131,
+      "title": "Decoder: fix drive conflict, set `jump_set_o` for JALR",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/131",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Some flags were not set right"
+    },
+    {
+      "number": 122,
+      "title": "Fix LSU + lint errors",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/122",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "new LSU FSMLSU changes address during request"
+    },
+    {
+      "number": 122,
+      "title": "Fix LSU + lint errors",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/122",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Address and flags were assigned with new signals"
+    },
+    {
+      "number": 113,
+      "title": "Switch to new signal name in tracer instantiation",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/113",
+      "category": "Not Bug",
+      "comment": "verification code"
+    },
+    {
+      "number": 111,
+      "title": "Fix updated signal name",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/111",
+      "category": "Not Bug",
+      "comment": "verification code"
+    },
+    {
+      "number": 110,
+      "title": "Fix RVFI rd write enable",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/110",
+      "category": "Not Bug",
+      "comment": "verification code"
+    },
+    {
+      "number": 83,
+      "title": "Fix perf counters",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/83",
+      "category": "Broken Conditional",
+      "security_relevant": false,
+      "comment": "Performance counters were optimized out or Xpotentially enhances security, because of no counting"
+    },
+    {
+      "number": 76,
+      "title": "Fix RVFI signal name",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/76",
+      "category": "Not Bug",
+      "comment": "verification code"
+    },
+    {
+      "number": 74,
+      "title": "Fix linting errors",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/74",
+      "category": "Not Bug",
+      "comment": "no visible effect"
+    },
+    {
+      "number": 54,
+      "title": "Fix decoding of C.LI, C.LUI, C.SRLI, C.SRAI, C.SSLI",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/54",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "hint bits caused illegal instruction exception"
+    },
+    {
+      "number": 53,
+      "title": "Perf counters & CSRs",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/53",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "CSR clear was wrongly implemented"
+    },
+    {
+      "number": 53,
+      "title": "Perf counters & CSRs",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/53",
+      "category": "Broken Conditional",
+      "security_relevant": false,
+      "comment": "Add standard compliant performance counters as CSR read values"
+    },
+    {
+      "number": 53,
+      "title": "Perf counters & CSRs",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/53",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "New performance counter signals were added"
+    },
+    {
+      "number": 53,
+      "title": "Perf counters & CSRs",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/53",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Adds csr access check (new signals)"
+    },
+    {
+      "number": 53,
+      "title": "Perf counters & CSRs",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/53",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "It was possible to clear CSR bits where the spec forbids it"
+    },
+    {
+      "number": 48,
+      "title": "Compressed hints",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/48",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "compressed instructions were decoded wrong"
+    },
+    {
+      "number": 42,
+      "title": "Typo fix in muldiv: Reminder->Remainder",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/42",
+      "category": "Not Bug",
+      "comment": "signal naming"
+    },
+    {
+      "number": 40,
+      "title": "Fix synthesis ikarageo",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/40",
+      "category": "Not Bug",
+      "comment": "synthesis/verification code"
+    },
+    {
+      "number": 39,
+      "title": "Code cleanup",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/39",
+      "category": "Not Bug"
+    },
+    {
+      "number": 35,
+      "title": "Fix missing enum casts",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/35",
+      "category": "Not Bug"
+    },
+    {
+      "number": 31,
+      "title": "Code cleanup, addresses #150 in stwg-base",
+      "url": "https://api.github.com/repos/lowRISC/ibex/pulls/31",
+      "category": "Not Bug"
+    }
+  ],
+  "riscv-boom": [
+    {
+      "number": 512,
+      "title": "Dec2020 RC bump redux",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/512",
+      "category": "Not Bug",
+      "comment": "feature"
+    },
+    {
+      "number": 505,
+      "title": "[dcache] Give up load reservations on exceptions.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/505",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 501,
+      "title": "Bump to Chisel 3.4 | Fix small deprecated items",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/501",
+      "category": "Not Bug",
+      "comment": "no rtl change"
+    },
+    {
+      "number": 490,
+      "title": "[ifu] Fix spurious ICache flush by invalid instructions",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/490",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "Flush flag was not set correctly (bugfix in 486 was fixed)debugging didn't work"
+    },
+    {
+      "number": 486,
+      "title": "[exu] Flush the ICache on a debug-mode JALR, to work around caching the uncacheable debug ram",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/486",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "Wrong value in misa CSR bits due to JALR in debug modedebugging didn't work"
+    },
+    {
+      "number": 481,
+      "title": "[rc] Bump to July 2020 rocketchip",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/481",
+      "category": "Not Bug",
+      "comment": "upgrade"
+    },
+    {
+      "number": 476,
+      "title": "Fix req_idx calculation",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/476/commits/cbdc4e8f51299623828ff24e9f786119017d5fb5",
+      "category": "Open",
+      "comment": "Wrong store request index priorization. Wrong order of memory operationsyes, but it is not merged, so maybe a bug in the addition of the PR itself"
+    },
+    {
+      "number": 475,
+      "title": "Ring boom sfb",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/475",
+      "category": "Not Bug",
+      "comment": "addition"
+    },
+    {
+      "number": 471,
+      "title": "Fix issue when building WithoutFPU",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/471",
+      "category": "Not Bug",
+      "comment": "didnt build"
+    },
+    {
+      "number": 468,
+      "title": "[lsu] Fix for RoCC accels which write L1",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/468",
+      "category": "Open",
+      "comment": "open"
+    },
+    {
+      "number": 460,
+      "title": "Fixed false btb clear",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/460",
+      "category": "Open",
+      "comment": "open"
+    },
+    {
+      "number": 451,
+      "title": "[util] Fix WrapSub typo",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/451",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "a util function performed a wrong computationa util function performed a wrong computation"
+    },
+    {
+      "number": 448,
+      "title": "[lsu] Use dmem release address for release search",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/448/commits/9886dcfda38fb87d8a73d09c8b1c3103b71398f9",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "[lsu] Use dmem release address for release searchcould have impacted order of memory operations"
+    },
+    {
+      "number": 445,
+      "title": "[core] Fix trace port",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/445",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 440,
+      "title": "[lsu] Strengthen hellacache interface assert",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/440",
+      "category": "Not Bug",
+      "comment": "not a bug fix "
+    },
+    {
+      "number": 437,
+      "title": "[exu] Suppress illegal instructions from dispatching into the LSU or the RoCC queue",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/437",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Illegal instructions were dispatched"
+    },
+    {
+      "number": 434,
+      "title": "Connect local clock and reset to each element in trace port",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/434",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 433,
+      "title": "Connect local clock and reset to each element in trace port",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/433",
+      "category": "Not Bug",
+      "comment": "tracer related"
+    },
+    {
+      "number": 432,
+      "title": "[fetch] fix pipeview",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/432",
+      "category": "Not Bug",
+      "comment": "tracer related"
+    },
+    {
+      "number": 423,
+      "title": "Pass maxHarts as an argument to PLICConsts.size",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/423",
+      "category": "Not Bug",
+      "comment": "no rtl change"
+    },
+    {
+      "number": 422,
+      "title": "Fixes for rocket-chip bump",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/422",
+      "category": "Not Bug",
+      "comment": "update"
+    },
+    {
+      "number": 420,
+      "title": "[mem] Fix Prober/MSHR conflict | parameterization changes to enable tracegen compat",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/420",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "[dcache] Avoid meta access conflict between MSHRs and ProberCould have lead to incorrect cache state information"
+    },
+    {
+      "number": 415,
+      "title": "Connect Dromajo Simulator",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/415",
+      "category": "Not Bug",
+      "comment": "tracer related"
+    },
+    {
+      "number": 413,
+      "title": "[exu] Size the badvaddr reg properly to make sign-extending work.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/413",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Incorrect exception address generated"
+    },
+    {
+      "number": 405,
+      "title": "[mshrs] Fix tag update hazard for refills",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/405",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "if it caused cache inconsistencies"
+    },
+    {
+      "number": 405,
+      "title": "[mshrs] Fix tag update hazard for refills",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/405",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "if it caused cache inconsistencies"
+    },
+    {
+      "number": 401,
+      "title": "[rocc] Fix RoCC shim not getting proper flushes",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/401",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Flushes are not properly forwarded to coprocessors for custom instructionsdepending on the coprocessor's functionality"
+    },
+    {
+      "number": 395,
+      "title": "[core] Clean up how load-misses kill misspeculated load-wakeups",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/395",
+      "category": "Not Bug",
+      "comment": "Speculated load miss killed the wakeup of other loads. Performance only"
+    },
+    {
+      "number": 394,
+      "title": "[core] Remove unsupported parameters",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/394",
+      "category": "Not Bug",
+      "comment": "Configuration cleanup"
+    },
+    {
+      "number": 385,
+      "title": "Delete unwanted files",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/385",
+      "category": "Not Bug"
+    },
+    {
+      "number": 383,
+      "title": "Ci order fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/383",
+      "category": "Not Bug"
+    },
+    {
+      "number": 376,
+      "title": "[ren] Fix RT_PAS passthrough",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/376",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "register renaming pass through (relevant for csrs)could have used wrong csr"
+    },
+    {
+      "number": 374,
+      "title": "[core] Fix busy bit selection.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/374",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong indication whether a register value was ready to be committedcould have used old register values in ooo computations"
+    },
+    {
+      "number": 373,
+      "title": "[ren] Check register type matches for bypassed allocations",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/373",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 372,
+      "title": "[ren] Fix assignment of busy status to dispatching uops",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/372",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 365,
+      "title": "Remove the ECC Config",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/365",
+      "category": "Not Bug",
+      "comment": "no rtl change"
+    },
+    {
+      "number": 348,
+      "title": "dummy PR",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/348",
+      "category": "Not Bug"
+    },
+    {
+      "number": 346,
+      "title": "[lsu] Don't allow MMIO loads to proceed while they have a dependent store",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/346",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Load was issued without waiting for 'dependent' store to be completed firstLoaded old data"
+    },
+    {
+      "number": 345,
+      "title": "[lsu] Don't allow MMIO loads to proceed while they have a dependent store",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/345",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 333,
+      "title": "[br] Initialize the branch resolution registers",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/333",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Avoid sending spurious branch updates after resetInvalid branch information may have corrupted the branch prediction state, or even branch resolution after a reset (or power gating)"
+    },
+    {
+      "number": 332,
+      "title": "Long Latency Writeback Port Fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/332",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrote to wrong registerMay have written sensitive data to a public register"
+    },
+    {
+      "number": 331,
+      "title": "RoCC writeback fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/331",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 324,
+      "title": "[rocc] Properly handle interrupts from rocc | properly pass exceptions to rocc",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/324/commits/b9cb1afe7a1954ab9c47972160abad7aa916be0a",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Co-processor exceptions were not forwarded to Boomsecurity relevant co-processor exceptions were dropped"
+    },
+    {
+      "number": 324,
+      "title": "[rocc] RoCC should receive instructions at same time as LSU - at decode",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/324/commits/b03325d9c48449e76698cbd047edd24eec4a7bd7",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "RoCC should receive instructions at same time as LSUco-processor could have decoded wrong inputs"
+    },
+    {
+      "number": 324,
+      "title": "[rocc] Stall RoCC resp queue dequeue when we need to send a no-write rocc response",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/324/commits/60bdbae3825ad3192c5f5eeb24cefc651708c6d4",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "dequeued rocc responses that were not writing to registersif that lead to using invalid responses"
+    },
+    {
+      "number": 315,
+      "title": "[ifu] Use correct fetch buffer for LargeConfig",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/315",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 312,
+      "title": "robAddrSz fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/312",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": " Fixed calculation of robAddrSz for some non-2^n coreWidth configurations.Could have lead to wrong addressing"
+    },
+    {
+      "number": 311,
+      "title": "robAddrSz fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/311",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 302,
+      "title": "alwaysBypassable fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/302",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "added some missing wakeup ports for pipeline widths > 2instructions could have been dropped or blocked"
+    },
+    {
+      "number": 300,
+      "title": "cleanup prints | have multicore configs show properly in collateral",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/300",
+      "category": "Not Bug",
+      "comment": "no rtl change"
+    },
+    {
+      "number": 298,
+      "title": "Fixed ROB fullness tracking w.r.t. mispredicts",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/298",
+      "category": "Not Bug",
+      "comment": "Make sure maybe_full is true after a mispredict. performance impact"
+    },
+    {
+      "number": 295,
+      "title": "Full ROB Fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/295",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Fixed bug that can occur when all ROB rows are occupied. ROB did not get emptied? Did it get stuck?availability"
+    },
+    {
+      "number": 289,
+      "title": "ROB Head & Tail Fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/289",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Fixed behavior of ROB head and tail lower order bits for pipeline widths > 3.may have committed unfinished instructions/instructions that caused exceptions"
+    },
+    {
+      "number": 289,
+      "title": "ROB Head & Tail Fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/289",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fixed behavior of ROB head and tail lower order bits for pipeline widths > 3.may have committed unfinished instructions/instructions that caused exceptions"
+    },
+    {
+      "number": 287,
+      "title": "LSU Store Execution Fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/287",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 284,
+      "title": "PNR Fix",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/284",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Fixed calculation of point of no return pointer.may have committed unfinished instructions/instructions that caused exceptions"
+    },
+    {
+      "number": 280,
+      "title": "[util] Fix BranchKillableQueue dequeue behavior",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/280",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrong generation of branch killable queue dequeue valid flag.Instruction may have been wrongly marked as non-killable."
+    },
+    {
+      "number": 278,
+      "title": "Fix Interrupt/Hart Mapping and BOOM Hart 0 Default",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/278",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrong hart information for interrupts + fix interrupt priority"
+    },
+    {
+      "number": 270,
+      "title": "fix to allow more than 2 boom cores in configs",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/270",
+      "category": "Not Bug",
+      "comment": "configuration options added"
+    },
+    {
+      "number": 269,
+      "title": "add hart to boom printfs",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/269",
+      "category": "Not Bug",
+      "comment": "Verification code"
+    },
+    {
+      "number": 261,
+      "title": "[rocc] Fix Rocc PNR waking",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/261",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrong integer register wake-upmay have used invalid data"
+    },
+    {
+      "number": 252,
+      "title": "Fixed behavior of rob_pnr_lsb when rob is completely full.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/252/commits/f1e53957205821b2f66a1386428b7def36f44373",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fixes PNR calculation if ROB is fullWrong PNR calculation may have lead to the usage of speculative or stale results."
+    },
+    {
+      "number": 252,
+      "title": "Fixed behavior of PNR when coreWidth > 2.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/252/commits/0188baea384eec0ae71c442ca4261e10d3d64822",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fixed behavior of PNR when coreWidth > 2.Wrong PNR calculation may have lead to the usage of speculative or stale results."
+    },
+    {
+      "number": 252,
+      "title": "Fixed behavior of PNR when coreWidth > 2.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/252/commits/0188baea384eec0ae71c442ca4261e10d3d64822",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Fixed behavior of PNR when coreWidth > 2.Wrong PNR calculation may have lead to the usage of speculative or stale results."
+    },
+    {
+      "number": 236,
+      "title": "Config fixes",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/236",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 202,
+      "title": "Fix O3 pipeview printouts for fetch",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/202",
+      "category": "Not Bug",
+      "comment": "Verification code"
+    },
+    {
+      "number": 200,
+      "title": "Fixed not working without RVC due to prev_is_half",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/200",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "PC updated to a wrong value if compressed instructions were enabled"
+    },
+    {
+      "number": 190,
+      "title": "[rvc] Fix RVC frontend for illegal 16b segments",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/190",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Bits that should have been ignored, indicated misaligned instruction.could have caused unexpected triggering of exceptions"
+    },
+    {
+      "number": 183,
+      "title": "Fixed a false value in history when flush happened",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/183",
+      "category": "Not Bug",
+      "comment": "wrong branch prediction - no arch. bug"
+    },
+    {
+      "number": 173,
+      "title": "[rvc] Fix RVC compatibility with banked I$",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/173",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Some instructions were not completely fetchedPotentially wrong instructions were executed or caused exceptions"
+    },
+    {
+      "number": 173,
+      "title": "[rvc] Fix RVC compatibility with banked I$",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/173",
+      "category": "Broken Conditional",
+      "security_relevant": true
+    },
+    {
+      "number": 160,
+      "title": "[lsu] Fix speculative load wakeups",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/160",
+      "category": "Not Bug",
+      "comment": "for loads to x0, so should have not had an arch. effect"
+    },
+    {
+      "number": 142,
+      "title": "fix Generator.scala to emit correct set of tests to be run by BOOM without an FPU",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/142",
+      "category": "Not Bug",
+      "comment": "verification related config"
+    },
+    {
+      "number": 139,
+      "title": "Fixed GShare predictor hashing | Fixed btb-sa DontCare issues",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/139",
+      "category": "Not Bug",
+      "comment": "branch prediction hash issue, no arch. effect"
+    },
+    {
+      "number": 137,
+      "title": "Fix MegaBoomConfig by increasing icache associativity",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/137",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Config change to avoid aliasing bugs for I$.Could have lead to corrupted/wrong instructions."
+    },
+    {
+      "number": 135,
+      "title": "[core] Fix CSR decode to match rocketchip changes.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/135",
+      "category": "Not Bug",
+      "comment": "Performance improvement"
+    },
+    {
+      "number": 131,
+      "title": "[dec] Fix CSR decode",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/131",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "illegal instruction exception may be triggered in wrong cases"
+    },
+    {
+      "number": 115,
+      "title": "[rc] Fixes for September RC",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/115",
+      "category": "Not Bug"
+    },
+    {
+      "number": 96,
+      "title": "fix device-tree entry, output of cat /proc/cpuinfo",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/96",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "wrong cpu model advertisednot in this case, advertised rocket instead of boom, but generally, one may rely on a hw mitigation that is not actually implemented "
+    },
+    {
+      "number": 95,
+      "title": "[lsu] Fixed load-reserved exceptions",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/95",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Store proceeded despite exception on corresponding Load Reserve (LR) instruction."
+    },
+    {
+      "number": 95,
+      "title": "[lsu] Fixed load-reserved exceptions",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/95",
+      "category": "Broken Conditional",
+      "security_relevant": true
+    },
+    {
+      "number": 86,
+      "title": "Valid predictors",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/86",
+      "category": "Not Bug"
+    },
+    {
+      "number": 83,
+      "title": "[access] Fix failing rv64mi/access test.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/83",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Wrong vaddr computation regarding the high-order bits -> wrong branch/jump target."
+    },
+    {
+      "number": 83,
+      "title": "[access] Fix failing rv64mi/access test.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/83",
+      "category": "Signal Mix-up",
+      "security_relevant": true
+    },
+    {
+      "number": 82,
+      "title": "Fix printout of fp pipeline info",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/82",
+      "category": "Not Bug",
+      "comment": "debug print"
+    },
+    {
+      "number": 75,
+      "title": "[fppipeline] Convert to chisel3. Manually prune IOs.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/75",
+      "category": "Not Bug",
+      "comment": "Width changes without architectural effect"
+    },
+    {
+      "number": 64,
+      "title": "Fix WFI/watchdog timer interaction.\n\nh/t @zhemao",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64/commits/d7b9cfa83c3648a358d8e545697a2f47358645b8",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "CSR stalls could have triggered watchdog timer / sim. assertion.If it was possible to stall a CSR write until the WD triggered and CSR kept old value as consequence."
+    },
+    {
+      "number": 64,
+      "title": "Fix superscalar decode/CSR interaction.\n\nRequires updating rocket-chip.\n\nCloses #37.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64/commits/eebc0ddabd0213f490a851d622d8129de44eb5a3",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fix superscalar decode/CSR interaction."
+    },
+    {
+      "number": 64,
+      "title": "[fetch] New frontend",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Code hangs due to broken initializations.availability after reset"
+    },
+    {
+      "number": 64,
+      "title": "Illegal instructions now write 0 to mtval.\n\nIn Priv 1.10, illegal instructions now write XLEN instruction bits\nto the mbadaddr/mtval CSR. Writing the illegal instruction bits is\nhard, but writing 0x0 is also a valid implementation.\n\nAlso add dontTouch to some signals.\n\nCloses #45.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64/commits/2b613965dbe757e26aa3109da691df99cac29e10",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "mtval may have been set to a wrong PCcould have leaked information about executed PCs."
+    },
+    {
+      "number": 64,
+      "title": "[fdiv] fix NaN bug in fdiv interactions.\n\nThe hardfloat.fdiv unit treats NaN payload as dontCare bits. But in the latest\nRISC-V user specification, we actually do care (as we put smaller-precision\nvalues in the NaN payload of the larger number).\n\nSo we sanitizeNaN values coming out of the divsqrt unit.\n\nCloses #46.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64/commits/9fd9794ab705c211b8957831c2efe32f7ecfc316",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "fdiv.d returns the wrong value."
+    },
+    {
+      "number": 64,
+      "title": "Fix ecall bug in which epc was incorrectly set.\n\nECall demands epc be set to PC, not PC+4.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64/commits/5af8a18350b55d36fdb67bb95878d0e6ce83ab93",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "instruction could have been skipped when exception handler increments PC as well"
+    },
+    {
+      "number": 64,
+      "title": "[fetch] Fix FTQ empty/full logic.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64/commits/54ceee453c7dbef72936660a2b13d33cec9fbbc7",
+      "category": "Not Bug",
+      "comment": "No bug because 'full' has performance impact, and 'empty' is only used for assert."
+    },
+    {
+      "number": 64,
+      "title": "[fetch] New frontend",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64",
+      "category": "Not Bug",
+      "comment": "new functionality"
+    },
+    {
+      "number": 64,
+      "title": "[btb] Fix bug (use BIM to compute cfi_idx).",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/64/commits/fe9deb1ece073704672cbd00a9fdcf426187c795",
+      "category": "Not Bug",
+      "comment": "branch prediction "
+    },
+    {
+      "number": 63,
+      "title": "Update",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/63",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 59,
+      "title": "It was fixed that if the reset of 1 or 2 measures could cause errors",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/59",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Wrong store/writeback due to uninitialized cache nack flag (causing wrong replay)."
+    },
+    {
+      "number": 34,
+      "title": "Fixes to get BOOM working in project-template and Firesim",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/34",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 28,
+      "title": "[fetch] Fix broken JAL redirection.\n\n   Don't let BTB-predicted not-taken branches override a JAL redirection.",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/28/commits/4c8d0bea574bfc3c492b28c1b846004dd5195b72",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong JAL redirectionspeculation caused JAL redirection"
+    },
+    {
+      "number": 7,
+      "title": "fix decode indexing",
+      "url": "https://api.github.com/repos/riscv-boom/riscv-boom/pulls/7",
+      "category": "Not Bug",
+      "comment": "Synthesis related"
+    }
+  ],
+  "rocket-chip": [
+    {
+      "number": 592,
+      "title": "AHBToTL: fix the order of updates to d_pause",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/592",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Often, devices are vulnerable in case of unexpected bus behaviour (see our Ibex bugs)"
+    },
+    {
+      "number": 589,
+      "title": "Fragmenter: fix a bug when underlying device supports larger bursts",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/589",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong address and data generated on a bus to a peripheral, e.g. interrupt controller"
+    },
+    {
+      "number": 578,
+      "title": "Don't re-read I$ RAMs on stall",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/578/commits/11c8857b5de30ada566b771b3114e5908d2793ad",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Don't re-read I$ RAMs on stallInstructions may have been duplicated"
+    },
+    {
+      "number": 578,
+      "title": "Don't double-count release traffic in perfctrs",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/578/commits/b24c43badb811c4cf4d755905b84584759e43e9a",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "Don't double-count release traffic in perfctrs"
+    },
+    {
+      "number": 578,
+      "title": "last => done",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/578/commits/dbc8f4b30bc970d3a55ef5be19a4dce8a4b3d08b",
+      "category": "Not Bug",
+      "comment": "fixes the bug fix above"
+    },
+    {
+      "number": 578,
+      "title": "Gracefully handle empty ports in AddressDecoder",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/578/commits/90b5cc96cb3ed742b25a206f0dc4abcef268c9ca",
+      "category": "Not Bug",
+      "comment": "fixes a check that happens during RTL generation"
+    },
+    {
+      "number": 578,
+      "title": "Support corner cases in TLBPermissions\n\nDon't crap out if the yes-set or no-set is empty.",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/578/commits/2d267b49400bde88e6bb066cf1a039ddd42e8b0a",
+      "category": "Not Bug",
+      "comment": "Support corner cases in TLBPermissions - during generation"
+    },
+    {
+      "number": 576,
+      "title": "Fixed Hasti can't handle N masters to one slave",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/576",
+      "category": "Not Bug",
+      "comment": "This code is obsolete anyway."
+    },
+    {
+      "number": 574,
+      "title": "Fix in-register representation of fdiv.s/fsqrt.s result\n\nWe were zero-extending it, which is a double-precision zero in the recoded\nformat.  So, when spilled and reloaded with fsd/fld, the original value\nwas destroyed.  Instead, set the MSBs so that it represents sNaN.  When\nspilled, the single-precision number will be preserved as the NaN payload.",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/574/commits/518658a548a21f18a4bfce3fe8504d258afba6de",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Values changed when registers were spilled to memory and read backUnexpected data modification that could be exploited"
+    },
+    {
+      "number": 574,
+      "title": "Use sNaN value for flw, like other single-precision ops",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/574/commits/ef60373c473f3fc7e26bb56eaf2312d5c84c8680",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "same bug"
+    },
+    {
+      "number": 563,
+      "title": "Fix HastiTestSRAM can't R/W byte when HSIZE is 0",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/563",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Byte 0 could not be accessed.A data value may have appeared to be 0"
+    },
+    {
+      "number": 559,
+      "title": "[WIP] RoCC TL fixes",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/559",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 552,
+      "title": "Fix up Absolute value.",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/552",
+      "category": "Not Bug",
+      "comment": "Update needed due to Chisel fix"
+    },
+    {
+      "number": 542,
+      "title": "Two bug fixes",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/542",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong NaN returned"
+    },
+    {
+      "number": 542,
+      "title": "Two bug fixes",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/542",
+      "category": "Signal Mix-up",
+      "security_relevant": false,
+      "comment": "xPIE was set wrong on xRETaccording to the authors, because the bug regarded the value of xPIE after the trap return only"
+    },
+    {
+      "number": 521,
+      "title": "Tile cake bugfixes",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/521",
+      "category": "Not Bug",
+      "comment": "Config bugs (example config, crashing generation)"
+    },
+    {
+      "number": 492,
+      "title": "Fix bug introduced with Fuzzer when nOperations is power of 2",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/492",
+      "category": "Not Bug",
+      "comment": "verification code"
+    },
+    {
+      "number": 489,
+      "title": "Changes made to diplomacy for feature support + bug fix in Fragmenter and fuzzer + support infinite traffic in fuzzer",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/489",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Fix Fragmenter to ensure logical operations must be sent out atomically.Probably caused wrong logic operation results."
+    },
+    {
+      "number": 479,
+      "title": "Fix FEQ flag generation",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/479",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "qNaN is not an invalid input, but caused exceptioncould have triggered an exception"
+    },
+    {
+      "number": 456,
+      "title": "rocketchip: TileInterrupts needs a TLCacheEdge",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/456",
+      "category": "Not Bug",
+      "comment": "generation error"
+    },
+    {
+      "number": 441,
+      "title": "[Rocket] Send correct type for iomshr reqs",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/441",
+      "category": "Not Bug",
+      "comment": "closed, cherry picked into 440"
+    },
+    {
+      "number": 440,
+      "title": "[rocket] dcache release addr bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/c5e03c9c766b1e0c92c9b1f5b68a8897934fffca",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "dcache release addr bugfixwrong cache address released, potential data corruption"
+    },
+    {
+      "number": 440,
+      "title": "[rocket] L1D acquire addr bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/66a2c5544e729b7b8bdbe77f0f9a44c9ac7314e2",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "dcache access addr bugfixpotentially accessed wrong data"
+    },
+    {
+      "number": 440,
+      "title": "[rocket] dcache probe ack data bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/1f51564577f9e3b92e79bbf5ee789572bff55758",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "cache coherency protocol"
+    },
+    {
+      "number": 440,
+      "title": "[rocket] dcache probe ack data bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/1f51564577f9e3b92e79bbf5ee789572bff55758",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "cache coherency protocol"
+    },
+    {
+      "number": 440,
+      "title": "[rocket] probeack vs probeackdata bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/da7ecfd189124efb9324b32e18608f8f32ed85ba",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "inverts probe ack in conditioncache coherency protocol"
+    },
+    {
+      "number": 440,
+      "title": "[rocket] grant addr bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/e1992d7c5524cb62fa69a763a2b82d9a33a404de",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "cache addressing"
+    },
+    {
+      "number": 440,
+      "title": "[tl2] broadcast hub probe port width bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/94086f227092d1927ccf65b1c52a751dd471ed0f",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Not enough probe bitscache coherency protocol"
+    },
+    {
+      "number": 440,
+      "title": "[rocket] d_last && d.fire() => d_done",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/5bd343bac899aea54d2dc89b2d5a85f27595ec6c",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "update or bugfix of cache handshakecache handshake"
+    },
+    {
+      "number": 440,
+      "title": "Plic: support 0 interrupts gracefully",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/5b594ced293f323323611ca65de80b59d55ab959",
+      "category": "Not Bug",
+      "comment": "empty interface added, may have been a generation bug"
+    },
+    {
+      "number": 440,
+      "title": "[Rocket] Send correct type for iomshr reqs\n\nAlso contain grow param bugfix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/440/commits/9dd12545d0056bdb9042c48b9849b9b6164d51f8",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "cache coherence"
+    },
+    {
+      "number": 427,
+      "title": "Fix issue with PutBlock and Release in BroadcastHub",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/427",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "data corruption"
+    },
+    {
+      "number": 421,
+      "title": "Fixed AsyncFifo with reset messaging",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/421",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "could cause spurious dequeue when no item is in the queue when reset on sending side."
+    },
+    {
+      "number": 417,
+      "title": "axi4 ToTL: fix decode error arbitration",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/417",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong backpreassure calculation when a valid request is immediately followed by\r\nan invalid request,potential data corruption or loss"
+    },
+    {
+      "number": 416,
+      "title": "tilelink2 Parameters: fix {contains,supports}Safe",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/416",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "When there is only one manager, you still want to know if the address\r\nwas wrong on the link to that manager!wrong TL address check"
+    },
+    {
+      "number": 416,
+      "title": "tilelink2 Parameters: fix {contains,supports}Safe",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/416",
+      "category": "Broken Conditional",
+      "security_relevant": true
+    },
+    {
+      "number": 413,
+      "title": "Add PutAtomic support to width adapters",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/413",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "PutAtomic operations were not passing through TL widener correctly.data corruptions or packet drops were possible"
+    },
+    {
+      "number": 413,
+      "title": "Add PutAtomic support to width adapters",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/413",
+      "category": "Broken Conditional",
+      "security_relevant": true
+    },
+    {
+      "number": 411,
+      "title": "axi4: ensure we accept AR before reporting R",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/411",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "axi4 handshake address was not accepted before reporting Rmay block a communication participant or have other side effects"
+    },
+    {
+      "number": 381,
+      "title": "asyncqueue: Fix typo in the Async Queue ",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/381",
+      "category": "Not Bug",
+      "comment": "timing related, may cause clock glitches though, is it even used?"
+    },
+    {
+      "number": 380,
+      "title": "correctly initialize the active flag",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/380",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 378,
+      "title": "tilelink2: Legacy should preserve the access size",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/378",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Without this fix, all loads from the core are full size.loads potentially data that it should not access"
+    },
+    {
+      "number": 375,
+      "title": "suggestNames for uncore utility function wires",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/375",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 372,
+      "title": "Tl2 rr irrevocable fix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/372",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "fix output data glitches"
+    },
+    {
+      "number": 365,
+      "title": "Fix up SlowIO and add receiver + unit test",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/365",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 352,
+      "title": "JTAG DTM & Debug Module fixes",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/352",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 349,
+      "title": "Give TileLink keys more sensible names",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/349",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong parameters object is given to the width adapter for external MMIO.potential data corruptions"
+    },
+    {
+      "number": 335,
+      "title": "Fixup Tracegen",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/335",
+      "category": "Not Bug",
+      "comment": "verification code"
+    },
+    {
+      "number": 334,
+      "title": "fix some incorrect behavior on enabling external mmio port.",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/334",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 332,
+      "title": "tilelink2: maxLgSize should be accurate",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/332",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Wrong bit size calculatedCould have caused to reading out of bounds"
+    },
+    {
+      "number": 332,
+      "title": "tilelink2: maxLgSize should be accurate",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/332",
+      "category": "Signal Mix-up",
+      "security_relevant": true
+    },
+    {
+      "number": 329,
+      "title": "tilelink2 Fragmenter: Mask low bits of D channel addr_lo",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/329",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong addressing"
+    },
+    {
+      "number": 326,
+      "title": "Make clock divider configurable",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/326",
+      "category": "Not Bug",
+      "comment": "config"
+    },
+    {
+      "number": 310,
+      "title": "PRCI: always use bus width >= XLen",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/310/commits/e1d7f6d7df40bc8909fb1df3ee19cf31bd92585c",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "bus width adaption for interrupts"
+    },
+    {
+      "number": 310,
+      "title": "tilelink2: handle bus width=1",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/310/commits/dd19e0911e4114e52b2bce3af7658075220f1c45",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "wrong addressing"
+    },
+    {
+      "number": 310,
+      "title": "tilelink2 RegField: .bytes should update more than one byte!",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/310/commits/943c36954d676c9f4f3b4ad64b7ce5933d19bc21",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "Data was not written to all bytes of the registerdata could have been lost"
+    },
+    {
+      "number": 305,
+      "title": "util: Do BlackBox Async Set/Reset Registers more properly",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/305",
+      "category": "Not Bug",
+      "comment": "broke synthesis"
+    },
+    {
+      "number": 299,
+      "title": "Fix a bunch of small annoyances",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/299",
+      "category": "Not Bug",
+      "comment": "refactoring"
+    },
+    {
+      "number": 282,
+      "title": "tilelink2 RAMModel: fix put, get, putAck, getAck case",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/282",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "Could read undefined/corrupted/invalid data in case of get/put overlaps"
+    },
+    {
+      "number": 282,
+      "title": "tilelink2 RAMModel: fix put, get, putAck, getAck case",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/282",
+      "category": "Signal Mix-up",
+      "security_relevant": true
+    },
+    {
+      "number": 270,
+      "title": "Allow configuration of simulation memory latency",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/270",
+      "category": "Not Bug",
+      "comment": "Config, verification"
+    },
+    {
+      "number": 257,
+      "title": "Fix routing in non-contiguous MMIO regions",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/257",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "potential data corruptions"
+    },
+    {
+      "number": 246,
+      "title": "fix configstring printout with no memory",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/246",
+      "category": "Not Bug"
+    },
+    {
+      "number": 242,
+      "title": "tie off finish signals in tilelink wrapper and unwrapper",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/242/commits/f0ab6d0214efcf921076c175718a8f7e7b61fb27",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "tie off finish signals in tilelink wrapper and unwrapperwrong bus handshake signals"
+    },
+    {
+      "number": 235,
+      "title": "fix DecoupledTLB to handle misses appropriately",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/235/commits/403cc1c5c4781e053945153ba58e033edac35fc3",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "fix DecoupledTLB to handle misses appropriatelywrong address translations probably"
+    },
+    {
+      "number": 235,
+      "title": "don't override req.bits.phys in SimpleHellaCacheIF",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/235/commits/bb578494d8e70f9a8984f855a5b0e701b4b9623b",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "don't override req.bits.phys in SimpleHellaCacheIFinformation lost"
+    },
+    {
+      "number": 235,
+      "title": "tie off invalidate_lr in RoCC",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/235/commits/27c674972cac718eebe1f15bb06215d626b3324a",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "don't mess with LR/SCcould have invalidated an instruction unexpectedly"
+    },
+    {
+      "number": 234,
+      "title": "Add address map entries for exported mmio port.",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/234",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "address map entries for some mmio's were missing.availability"
+    },
+    {
+      "number": 220,
+      "title": "Work-around for current Scala compiler \"structural type loses implici\u2026",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/220",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 213,
+      "title": "Adds Logic & test support for JTAG implementation of Debug Transport Module.",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/213",
+      "category": "Not Bug",
+      "comment": "Feature"
+    },
+    {
+      "number": 212,
+      "title": "Move non-submodule packages into src/main/scala",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/212",
+      "category": "Not Bug",
+      "comment": "refactoring"
+    },
+    {
+      "number": 210,
+      "title": "Move non-module packages into src/main/scala",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/210",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 176,
+      "title": "Fix L2 Writeback deadlock issue",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/176",
+      "category": "Not Bug",
+      "comment": "verification"
+    },
+    {
+      "number": 175,
+      "title": "L2 back-to-back Release fix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/175",
+      "category": "Not Bug",
+      "comment": "code is not available, also \"it won't be possible to test for the presence or absence of this bug because we have already changed the behavior of probeCopy \""
+    },
+    {
+      "number": 156,
+      "title": "Get rid of TL -> AXI buffering and fix SimpleHellaCacheIF for non-blocking DCache",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/156",
+      "category": "Not Bug",
+      "comment": "config and non-existent submodules"
+    },
+    {
+      "number": 153,
+      "title": "Fix converter and L2",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/153",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "adds buffering and locking to the TL -> AXI converter so that read responses cannot be interleaved with write responses.potential data corruptions"
+    },
+    {
+      "number": 151,
+      "title": "Fixing Bufferless Broadcast Hub",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/151",
+      "category": "Not Bug",
+      "comment": "adds new feature"
+    },
+    {
+      "number": 144,
+      "title": "Fix tests and clean up leftover code from BackupMemory",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/144",
+      "category": "Not Bug",
+      "comment": "cleanups"
+    },
+    {
+      "number": 131,
+      "title": "TL Width Fix",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/131",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "fixes a bug with the TL width adapterwrong data width could cause data corruption or loss"
+    },
+    {
+      "number": 106,
+      "title": "Fix PLIC instantiation when S-mode is disabled",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/106",
+      "category": "Broken Conditional",
+      "security_relevant": true,
+      "comment": "S-mode interrupts ports existed"
+    },
+    {
+      "number": 102,
+      "title": "Don't make MIFTagBits a computed parameter",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/102",
+      "category": "Not Bug",
+      "comment": "refactoring"
+    },
+    {
+      "number": 99,
+      "title": "Priv 1.9 Fixes",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/99",
+      "category": "Not Bug",
+      "comment": "spec upgrade"
+    },
+    {
+      "number": 95,
+      "title": "Put memory into the address map and no longer use MMIOBase",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/95",
+      "category": "Not Bug",
+      "comment": "change request"
+    },
+    {
+      "number": 85,
+      "title": "Fix narrow read/write behavior for AXI converters",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/85",
+      "category": "Not Bug",
+      "comment": "verification"
+    },
+    {
+      "number": 84,
+      "title": "Fix LR/SC livelock bug; bump chisel3",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/84",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 75,
+      "title": "Fix the SCR file for Chisel 3",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/75",
+      "category": "Not Bug",
+      "comment": "some interface connections, what is scr file?"
+    },
+    {
+      "number": 71,
+      "title": "Fix MIF bug that cuts off upper xact id bits",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/71",
+      "category": "Signal Mix-up",
+      "security_relevant": true,
+      "comment": "16-tile RocketChip, it failed to run programs because the upper bit of transactions created by AXI masters (in this case, RTC) was being cut offavailability"
+    },
+    {
+      "number": 68,
+      "title": "Fix the backup memory port",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/68",
+      "category": "Not Bug",
+      "comment": "fixing legacy functionality"
+    },
+    {
+      "number": 58,
+      "title": "More travis fixing",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/58",
+      "category": "Not Bug",
+      "comment": "verification"
+    },
+    {
+      "number": 39,
+      "title": "Rocket Chip fixes in response to lowRISC team's comments",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/39",
+      "category": "Not Bug",
+      "comment": "closed"
+    },
+    {
+      "number": 13,
+      "title": "Use new setName method for SeqMem to fix readmemh reference in Zscale",
+      "url": "https://api.github.com/repos/chipsalliance/rocket-chip/pulls/13",
+      "category": "Not Bug",
+      "comment": "closed"
+    }
+  ]
+}
