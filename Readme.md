@@ -20,7 +20,7 @@ The artifacts include the following components, organized as indicated below:
   - `EnCorpus_rocket.tar.gz`
   
   These archives can be unpacked to `out/EnCorpus` using `make unpack_encorpus`.
-- **Reproducible Evaluations**: Evaluations of DifuzzRTL, Processorfuzz, and Cascade against the bug set are detailed in the Setup and Experiments sections below.
+- **Reproducible Evaluations**: To enable reproducible evaluations of DifuzzRTL, Processorfuzz, and Cascade on the EnCorpus bug set, we provide a Dockerfile for environment setup and dependency installation. We also make a pre-built Docker image available, which can be obtained as outlined in the Setup section. Additionally, we include Python scripts in the `fuzzers` directory at [encarsia-meta](https://github.com/encarsia-artifacts/encarsia-meta) to automate wrapping, environment variable configuration, and fuzzer execution against Encarsia-generated bugs. More details on how to reproduce our fuzzer evaluation are provided in the Setup and Experiments sections below.
 
 ## Survey
 The survey artifacts consist of two parts. First, the automatic collection of pull requests from GitHub and their subsequent automatic filtering in `survey/collecting`. The results are stored in survey/collecting/data.json. To see how to parse the data, refer to `survey/collecting/plot.py`. To reproduce the collection process, use `survey/collecting/collect.py`. We recommend placing a GitHub personal access token in `survey/collecting/token` to avoid rate limits, which can cause significant delays.
