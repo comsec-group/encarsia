@@ -4,8 +4,7 @@
 
 IMAGE_NAME := ethcomsec/encarsia-artifacts:latest
 # Ensure the specified path has at least 3TB of available storage for the buggy designs
-OUT_DIRECTORY := ./out
-ENCORPUS_DIRECTORY := $(OUT_DIRECTORY)/EnCorpus
+ENCORPUS_DIRECTORY := ./EnCorpus
 
 unpack_encorpus:
 	mkdir -p $(ENCORPUS_DIRECTORY)
@@ -20,10 +19,10 @@ build:
 	docker build -t $(IMAGE_NAME) . 2>&1 | tee build.log
 
 run:
-	docker run -it -v $(OUT_DIRECTORY):/encarsia-meta/out $(IMAGE_NAME)
+	docker run -it $(IMAGE_NAME)
 
 run_temp:
-	docker run -it -v $(OUT_DIRECTORY):/encarsia-meta/out --rm $(IMAGE_NAME)
+	docker run -it --rm $(IMAGE_NAME)
 
 push:
 	docker login registry-1.docker.io

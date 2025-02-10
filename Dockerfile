@@ -155,3 +155,7 @@ RUN cd /encarsia-processorfuzz/ && gunzip processorfuzz_spike.gz
 COPY cascade_design_repos.json /encarsia-cascade/design-processing/design_repos.json
 
 RUN git clone https://github.com/encarsia-artifacts/encarsia-meta.git
+
+COPY EnCorpus_*.tar.gz /
+
+RUN mkdir -p /encarsia-meta/out/EnCorpus && tar -xvf /EnCorpus_boom.tar.gz -C /encarsia-meta/out/EnCorpus && tar -xvf /EnCorpus_ibex.tar.gz -C /encarsia-meta/out/EnCorpus && tar -xvf /EnCorpus_rocket.tar.gz -C /encarsia-meta/out/EnCorpus
