@@ -154,7 +154,9 @@ RUN cd /encarsia-processorfuzz/ && gunzip processorfuzz_spike.gz
 
 COPY cascade_design_repos.json /encarsia-cascade/design-processing/design_repos.json
 
-RUN git clone https://github.com/encarsia-artifacts/encarsia-meta.git
+RUN pip install tabulate
+
+RUN git clone https://github.com/encarsia-artifacts/encarsia-meta.git /encarsia-meta
 
 COPY EnCorpus_*.tar.gz /
 
