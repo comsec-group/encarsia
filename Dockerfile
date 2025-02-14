@@ -152,6 +152,9 @@ RUN cd /encarsia-difuzz-rtl/Fuzzer/ISASim/riscv-isa-sim && mkdir build && cd bui
 RUN git clone https://github.com/encarsia-artifacts/encarsia-processorfuzz.git /encarsia-processorfuzz
 RUN cd /encarsia-processorfuzz/ && gunzip processorfuzz_spike.gz
 
+RUN sed -i 's/int num_bugs = 1000;/int num_bugs = 4000;/' /encarsia-yosys/passes/inject/inject_amt.cc
+RUN cd encarsia-yosys && make -j 200 && make install
+
 COPY cascade_design_repos.json /encarsia-cascade/design-processing/design_repos.json
 
 RUN pip install tabulate
