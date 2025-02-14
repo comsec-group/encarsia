@@ -152,15 +152,21 @@ RUN cd /encarsia-difuzz-rtl/Fuzzer/ISASim/riscv-isa-sim && mkdir build && cd bui
 RUN git clone https://github.com/encarsia-artifacts/encarsia-processorfuzz.git /encarsia-processorfuzz
 RUN cd /encarsia-processorfuzz/ && gunzip processorfuzz_spike.gz
 
+##
+# Encarsia
+##
+
+# Increases the number of injected broken conditionals
 RUN sed -i 's/int num_bugs = 1000;/int num_bugs = 4000;/' /encarsia-yosys/passes/inject/inject_amt.cc
 RUN cd encarsia-yosys && make -j 200 && make install
 
 COPY cascade_design_repos.json /encarsia-cascade/design-processing/design_repos.json
 
+# For summarizing the results
 RUN pip install tabulate
 
 RUN git clone https://github.com/encarsia-artifacts/encarsia-meta.git /encarsia-meta
 
+# Unpacks EnCorpus
 COPY EnCorpus_*.tar.gz /
-
 RUN mkdir -p /encarsia-meta/out/EnCorpus && tar -xvf /EnCorpus_boom.tar.gz -C /encarsia-meta/out/EnCorpus && tar -xvf /EnCorpus_ibex.tar.gz -C /encarsia-meta/out/EnCorpus && tar -xvf /EnCorpus_rocket.tar.gz -C /encarsia-meta/out/EnCorpus
