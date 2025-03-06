@@ -2,7 +2,7 @@
 # Licensed under the General Public License, Version 3.0, see LICENSE for details.
 # SPDX-License-Identifier: GPL-3.0-only
 
-FROM ubuntu:latest
+FROM ubuntu:22.04
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y curl gnupg apt-utils && \
     apt-get install -y apt-transport-https curl gnupg git perl python3 make autoconf g++ flex bison ccache libgoogle-perftools-dev numactl perl-doc libfl2 libfl-dev zlib1g zlib1g-dev \
@@ -117,6 +117,7 @@ RUN bash -c "source /encarsia-cascade/env.sh && cd /encarsia-cascade/design-proc
 
 RUN git clone https://github.com/encarsia-artifacts/encarsia-ibex.git /encarsia-ibex
 
+RUN pip3 install --upgrade setuptools
 RUN pip3 uninstall -y edalize fusesoc && pip3 install mako git+https://github.com/lowRISC/edalize.git@ot git+https://github.com/lowRISC/fusesoc.git@ot
 RUN git clone https://github.com/encarsia-artifacts/encarsia-cellift.git --recursive
 COPY cellift_design_repos.json /encarsia-cellift/design-processing/design_repos.json
@@ -138,6 +139,7 @@ RUN sed -i 's/objcopy=""/objcopy="riscv64-unknown-elf-objcopy"/' /usr/local/bin/
 # Install cocotb
 RUN echo "host" | apt install -y make gcc g++ python3 python3-dev python3-pip
 RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN pip3 install --upgrade pip wheel
 RUN pip3 install cocotb==1.5.2
 
 RUN pip3 install psutil sysv_ipc
