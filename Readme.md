@@ -1,4 +1,4 @@
-# Encarsia: Evaluating CPU Fuzzers with Automatic Bug Injection
+# Encarsia: Evaluating CPU Fuzzers via Automatic Bug Injection
 ## Introduction
 Welcome to the Encarsia artifacts repository! This, along with other repositories available at https://github.com/encarsia-artifacts or through our official artifact submission at https://doi.org/10.5281/zenodo.14664723, provides the resources needed to examine, reproduce, and extend our work. For additional information about Encarsia, please refer to the accompanying paper.
 
@@ -43,7 +43,7 @@ All of the functionality described in our paper, except the survey, is automated
 4. (Optional) Bug verification with JasperGold
 5. Fuzzer evaluation
 
-The script is flexible, allowing users to run experiments with varying combinations of enabled features. For example, when Yosys verification and fuzzer evaluation are enabled, the script first verifies the bugs using Yosys, then proceeds to fuzzer evaluation with only the verified bugs. It also handles intermediate results, so if you run partial steps (e.g., only verification), the results are stored in an experiment directory and can be revisited later. To resume the experiment, specify the experiment directory with the `-d DIRECTORY` option, and the script will continue from where you left off. The experiment directory is structured as follows: 
+The script is flexible, allowing users to run experiments with various combinations of enabled features. For example, when Yosys verification and fuzzer evaluation are enabled, the script first verifies the bugs using Yosys, then proceeds to fuzzer evaluation with only the verified bugs. It also handles intermediate results, so if you run partial steps (e.g., only verification), the results are stored in an experiment directory and can be revisited later. To resume the experiment, specify the experiment directory with the `-d DIRECTORY` option, and the script will continue from where you left off. The experiment directory is structured as follows: 
 
 ```
 experiment-directory/
@@ -147,7 +147,7 @@ Note that bug directory names are remapped to 1-N in ascending order in the tabl
 |----------|:--:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
 | EnCorpus | 39 | 254 | 293 | 394 | 526 | 565 | 619 | 743 | 779 | 820 | 858 | 945 | 963 | 974 | 1198 |
 
-To avoid long runtimes when reproducing the experiments, we have limited the fuzzing runtime to 30 minutes, compared to the original 24-hour duration, which could take several days on systems with fewer cores. This should be sufficient to yield the same results as those presented in the paper. To modify the timeout, update `FUZZING_TIMEOUT` in `/encarsia-meta/defines.py` to your preferred value in seconds.
+To avoid long runtimes when reproducing the experiments, we have limited the fuzzing runtime to 30 minutes by default. The original 24-hour duration, which could take several days on systems with fewer cores. This should be sufficient to yield the same results as those presented in the paper. To modify the timeout, update `FUZZING_TIMEOUT` in `/encarsia-meta/defines.py` to your preferred value in seconds.
 
 ### Combination of steps
 To execute a combination of steps in sequence, use the respective options together. For example, to prefilter and subsequently verify, run:
