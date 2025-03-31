@@ -147,7 +147,7 @@ Note that bug directory names are remapped to 1-N in ascending order in the tabl
 |----------|:--:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|
 | EnCorpus | 39 | 254 | 293 | 394 | 526 | 565 | 619 | 743 | 779 | 820 | 858 | 945 | 963 | 974 | 1198 |
 
-To avoid long runtimes when reproducing the experiments, we have limited the fuzzing runtime to 30 minutes by default. The original 24-hour duration, which could take several days on systems with fewer cores. This should be sufficient to yield the same results as those presented in the paper. To modify the timeout, update `FUZZING_TIMEOUT` in `/encarsia-meta/defines.py` to your preferred value in seconds.
+To reduce runtime when reproducing the experiments, we have limited the fuzzing duration to 30 minutes, down from the original 24 hours, which could take several days on systems with fewer cores. This should be sufficient to yield the same results as those presented in the paper. To modify the timeout, update `FUZZING_TIMEOUT` in `/encarsia-meta/defines.py` to your preferred value in seconds.
 
 ### Combination of steps
 To execute a combination of steps in sequence, use the respective options together. For example, to prefilter and subsequently verify, run:
@@ -157,9 +157,20 @@ python encarsia.py -d DIRECTORY -H HOSTS [HOSTS ...] -p PROCESSES -P -Y
 
 ## Experiments
 We provide an overview of the experiments presented in the paper, including the required computing resources (**Requirements**), execution steps (**Execution**), and expected results (**Results**).
+All experiments are intended to be run within the provided Docker environment to ensure consistency and reproducibility. 
+Before running each experiment, ensure that your system has sufficient computing resources available to meet the requirements specified for the experiment.
 
-### (E1) Injection (Section 7.1)
-This experiment precisely replicates the injection experiment described in Section 7.1 of the paper.
+### (E1) Survey (Section 4)
+The results of our bug survey are available in `survey/classification/synthetic.json` and `survey/classification/natural.json` within the main artifacts repository (not Docker image).
+
+#### Execution
+Use `survey/classification/plot.py` to display the results of the survey.
+
+#### Results
+The results of the survey confirm that all identified observable bugs indeed do fall into one of the two categories.
+
+### (E2) Injection (Section 7.1)
+This experiment exactly replicates the injection experiment described in Section 7.1 of the paper.
 
 #### Requirements
 - **Human time:** 5 minutes
@@ -172,7 +183,7 @@ Navigate to the `/encarsia-meta` directory and run:
 ```
 python encarsia.py -d out/Injection -H ibex rocket -p 30
 ```
-Optionally, include `boom` in the `-H` option to inject bugs into BOOM:
+Optionally, add `boom` to the `-H` option to inject bugs into BOOM:
 ```
 python encarsia.py -d out/Injection -H ibex rocket boom -p 30
 ```
@@ -181,8 +192,8 @@ Note that this requires up to 512 GB of additional disk space.
 #### Results
 This experiment injects around 1000 Signal Mix-ups and 1000 Broken Conditionals per CPU. The resulting host.v files and injection logs can be found in the experiment directory at `/encarsia-meta/out/Injection`. A summary of the injection results, similar to Table 5 in the paper, is printed to the terminal. We expect the summary table to closely match the one presented in the paper.
 
-### (E2) Verification (Section 7.1)
-This experiment closely follows the one in Section 7.1 of the paper, with the key difference being our use of a fully open-source verification setup based on Yosys. Additionally, we limit the experiment to bugs from the EnCorpus bug set to shorten the experiment time.
+### (E3) Verification (Section 7.1)
+This experiment closely replicates the verification experiment outlined in Section 7.1 of the paper, with the main difference being our use of a fully open-source verification setup based on Yosys. Additionally, we limit the experiment to bugs from the EnCorpus bug set to reduce the duration of the experiment.
 
 #### Requirements
 - **Human time:** 5 minutes
@@ -194,16 +205,23 @@ This experiment closely follows the one in Section 7.1 of the paper, with the ke
   - **BOOM** 32 GB per process
 
 #### Execution
-Navigate to the `/encarsia-meta` directory and run:
+Assess your system's computing resources to determine the number of parallel processes it can support for this experiment. Then, navigate to the `/encarsia-meta` directory and run:
 ```
-python encarsia.py -d out/EnCorpus -H ibex rocket boom -p 30 -Y
+python encarsia.py -d out/EnCorpus -H ibex rocket boom -p NUM_PROC -Y
 ```
+replacing `NUM_PROC` with the number of parallel processes.
+
+You can also execute the experiment on one device at a time by running:
+```
+python encarsia.py -d out/EnCorpus -H DEVICE -p NUM_PROC -Y
+```
+for each of the three devices. This ensures optimal memory usage, despite varying memory requirements across devices.
 
 #### Results
-This experiment generates formal proofs of architectural observability for the EnCorpus bugs using Yosys. The resulting `yosys_verify.log` and `yosys_proof.S` can be found in the EnCorpus experiment directory at `/encarsia-meta/out/EnCorpus`. A summary of the verification results, similar to Table 6 in the paper, is printed to the terminal. We expect Yosys to verify most of the EnCorpus bugs in the simpler CPUs (Ibex and Rocket) and a smaller subset in the more complex BOOM. Furthermore, we expect the average verification time per bug to be similar to the values reported in Table 6 of the paper.
+This experiment generates formal proofs of architectural observability for the EnCorpus bugs using the Yosys setup. The resulting verification log (`yosys_verify.log`) and proof of observability (`yosys_proof.S`) can be found in the EnCorpus experiment directory at `/encarsia-meta/out/EnCorpus`. Additionally, a summary of the verification results, similar to Table 6 in the paper, is printed directly to the terminal. Note that EnCorpus was verified using the JasperGold setup, which is more robust and powerful. As a result, not all EnCorpus bugs are expected to verify successfully using Yosys. We nevertheless expect Yosys to verify most of the EnCorpus bugs in the simpler CPUs (Ibex and Rocket) and a smaller subset in the more complex BOOM. Furthermore, we expect the average verification time per bug to be similar to the values reported in Table 6 of the paper.
 
-### (E3) Granularity of differential fuzzing (Section 8.1)
-This experiment closely matches the fuzzing experiment described in Section 8.1 of the paper, with the key difference being the reduced fuzzing time of 30 minutes.
+### (E4) Granularity of differential fuzzing (Section 8.1)
+This experiment closely replicates the fuzzing experiment outlined in Section 8.1 of the paper, with the main difference being the reduced fuzzing duration of 30 minutes.
 
 #### Requirements
 - **Human time:** 5 minutes
@@ -218,12 +236,12 @@ python encarsia.py -d out/EnCorpus -H rocket boom -p 30 -F no_cov_difuzzrtl no_c
 ```
 
 #### Results
-This experiment generates a fuzzing run log in `fuzz.log` and the bug detection results (after false positive filtering) in `check_summary.log` within the corresponding fuzzer directories at `/encarsia-meta/out/EnCorpus`. A summary of the fuzzing results, similar to Table 8 in the paper, is printed to the terminal.
+This experiment generates two key outputs: a fuzzing log stored in `fuzz.log`, and the bug detection results (after filtering out false positives) in `check_summary.log`. Both files are located within the corresponding fuzzer directories at `/encarsia-meta/out/EnCorpus`. Additionally, a summary of the fuzzing results, similar to Table 8 in the paper, is printed directly to the terminal.
 
-We expect the results to align with those presented in the paper, except for Rocket Signal Mix-up 1 and BOOM Signal Mix-ups 9 and 14. These bugs are detected by both DifuzzRTL and Processorfuzz in the Docker setup, but remain undetected by both in the bare-metal setup used for the data presented in the paper despite several fuzzing re-runs. We hypothesize that this discrepancy may be due to differences in the versions of fuzzer dependencies, such as Spike or Verilator. However, the lack of clarity regarding the internal versions used by the fuzzers has made it difficult to pinpoint the cause. We are currently investigating and will update the artifacts once the issue is resolved.
+We expect the results to match those presented in the paper, except for Rocket Signal Mix-up 1 and BOOM Signal Mix-ups 9 and 14. These bugs are detected by DifuzzRTL and Processorfuzz in the Docker setup, but remain undetected in the bare-metal setup used to generate the data presented in the paper despite several fuzzing re-runs. We suspect this discrepancy stems from differing versions of dependencies, such as Spike or Verilator, used internally by the fuzzers. However, the lack of transparency regarding which tools are used and their specific versions makes it difficult to determine the exact cause. Despite this discrepancy, we firmly believe that the major claims of the paper remain valid.
 
-### (E4) Coverage metrics (Section 8.2)
-This experiment closely matches the fuzzing experiment described in Section 8.2 of the paper, with the key difference being the reduced fuzzing time of 30 minutes.
+### (E5) Coverage metrics (Section 8.2)
+This experiment closely replicates the fuzzing experiment outlined in Section 8.2 of the paper, with the main difference being the reduced fuzzing duration of 30 minutes.
 
 #### Requirements
 - **Human time:** 5 minutes
@@ -238,10 +256,12 @@ python encarsia.py -d out/EnCorpus -H rocket boom -p 30 -F difuzzrtl processorfu
 ```
 
 #### Results
-This experiment generates a fuzzing run log in `fuzz.log` and the bug detection results (after false positive filtering) in `check_summary.log` within the corresponding fuzzer directories at `/encarsia-meta/out/EnCorpus`. A summary of the fuzzing results, similar to Table 9 in the paper, is printed to the terminal. Similarly, as in the previous experiment, we observe discrepancies between Docker and bare-metal setups for Rocket Signal Mix-up 1 and BOOM Signal Mix-ups 9 and 14.
+This experiment generates two key outputs: a fuzzing log stored in `fuzz.log`, and the bug detection results (after filtering out false positives) in `check_summary.log`. Both files are located within the corresponding fuzzer directories at `/encarsia-meta/out/EnCorpus`. Additionally, a summary of the fuzzing results, similar to Table 9 in the paper, is printed directly to the terminal.
 
-### (E5) Importance of the seeds (Section 8.3)
-This experiment closely matches the fuzzing experiment described in Section 8.3 of the paper, with the key difference being the reduced fuzzing time of 30 minutes.
+As in the previous experiment, we observe discrepancies between the Docker and bare-metal setups for Rocket Signal Mix-up 1 and BOOM Signal Mix-ups 9 and 14.
+
+### (E6) Importance of the seeds (Section 8.3)
+This experiment closely replicates the fuzzing experiment outlined in Section 8.3 of the paper, with the main difference being the reduced fuzzing duration of 30 minutes.
 
 #### Requirements
 - **Human time:** 5 minutes
@@ -249,7 +269,7 @@ This experiment closely matches the fuzzing experiment described in Section 8.3 
 - **Disk:** 10 GB
 - **Memory:** 4 GB per process
 
-Note that this experiment reuses the results of DifuzzRTL evaluation from experiment (E4) if available, hence the lower compute time and disk space requirements. If the results of experiment (E4) are not available, the requirements are approximately half that of experiment (E4).
+Note that this experiment reuses the results of the DifuzzRTL evaluation from experiment (E5), if available, which reduces computation time and disk space requirements. If the results of experiment (E5) are not available, the requirements are approximately half those of experiment (E5).
 
 #### Execution
 Navigate to the `/encarsia-meta` directory and run:
@@ -258,7 +278,15 @@ python encarsia.py -d out/EnCorpus -H rocket boom -p 30 -F difuzzrtl cascade
 ```
 
 #### Results
-This experiment generates a fuzzing run log in `fuzz.log` and the bug detection results (after false positive filtering) in `check_summary.log` within the corresponding fuzzer directories at `/encarsia-meta/out/EnCorpus`. A summary of the fuzzing results, similar to Table 10 in the paper, is printed to the terminal. Similarly, as in the previous experiment, we observe discrepancies between Docker and bare-metal setups for Rocket Signal Mix-up 1 and BOOM Signal Mix-ups 9 and 14 on DifuzzRTL. The results for Cascade exactly match those reported in the paper.
+This experiment generates two key outputs: a fuzzing log stored in `fuzz.log`, and the bug detection results (after filtering out false positives) in `check_summary.log`. Both files are located within the corresponding fuzzer directories at `/encarsia-meta/out/EnCorpus`. Additionally, a summary of the fuzzing results, similar to Table 10 in the paper, is printed directly to the terminal.
+
+As in the previous experiments, we observe discrepancies between the Docker and bare-metal setups for Rocket Signal Mix-up 1 and BOOM Signal Mix-ups 9 and 14 on DifuzzRTL. However, the results for Cascade exactly match those reported in the paper.
+
+## Troubleshooting Guide
+Follow the steps outlined below to troubleshoot common issues encountered while using Encarsia:
+- **OOM Errors:** Ensure your system meets the minimum memory requirements specified for the experiment by reducing the number of parallel processes `-p NUM_PROC`.
+- **Running Out of Disk Space:** Verify that your system has sufficient disk space before starting an experiment. Clean up old experiment outputs if necessary.
+- **Badly Terminated Parallel Experiments:** If an experiment is terminated ungracefully, some processes may remain running in the background. Use `ps` to identify and terminate any processes stuck in an infinite loop.
 
 ## Extending support for additional CPUs
 Encarsia can be easily extended to support additional CPUs by creating a new `EncarsiaConfig` instance in `encarsia-meta/config.py` and adding a case for the CPU identifier in `get_host_config(name: str)` to return the new instance. Existing configurations can be used as a helpful reference.
